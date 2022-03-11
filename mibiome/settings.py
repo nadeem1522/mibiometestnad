@@ -100,10 +100,10 @@ if not DEBUG:
     DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.postgresql',
-            'HOST': "ec2-52-70-186-184.compute-1.amazonaws.com",
-            'NAME': "d5rgj39490qgju",
-            'USER': "yruhjsgukqoirf",
-            'PASSWORD': "f3c5ab152273666de75b2c6f7b2a4d4faa227459548427a3ce5d3177468de37e",
+            'HOST': "ec2-34-233-114-40.compute-1.amazonaws.com",
+            'NAME': "d4ll8tig9sosce",
+            'USER': "covtplacdsezag",
+            'PASSWORD': "398a89c153fca58ae85aa135bf9f58b71821e217df8fdfe5306a42ef187a0e57",
             'PORT': 5432,
         }
     }
