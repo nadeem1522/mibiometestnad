@@ -56,12 +56,11 @@ class QuoteFormView(TemplateView):
         })
         # pdf = pdfkit.from_string(html, False)
 
-        hti = Html2Image()
-        img = hti.screenshot(html_str=html)
+    
         msg = EmailMultiAlternatives(
             subject=subject,from_email=from_email, to=to,
             body=f'PFA the quote response pdf file.\nUser Email ID: {email}')
-        msg.attach(filename='quote.pdf', content=pdf)
+        msg.attach(filename='quote.html', content=html)
         msg.send()
     
     def send_mail_to_cust(self, email, name, unique_code):
