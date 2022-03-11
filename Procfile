@@ -1,0 +1,1 @@
+web: gunicorn mibiome.wsgi app:app
